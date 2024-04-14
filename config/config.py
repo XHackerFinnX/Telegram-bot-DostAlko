@@ -1,4 +1,4 @@
-TOKEN = "7041056625:AAGcb_MECwqxPiObFg0BSd-TqGfXTStPdeo"
+TOKEN = ""
 
 admin = ["1387002896"]
 
