@@ -1,9 +1,9 @@
-from aiogram import Bot, Dispatcher, executor, types
+from aiogram import Bot, Dispatcher, types
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiohttp.client_exceptions import ClientOSError, ClientConnectorError
 from asyncio.exceptions import TimeoutError
 from aiogram.utils.exceptions import MessageToDeleteNotFound, MessageCantBeDeleted, TelegramAPIError, NetworkError, RetryAfter
-from config.config import TOKEN, admin
+from config.config import TOKENC, admin
 from data.data_users import sql_start_users, sql_users_check, sql_delete_users
 from data.data_courier import sql_check_couriers
 from data.data_courier import sql_start_courier, sql_start_storage_couriers, sql_id_courier, sql_delete_courier, sql_broadcast_data_couriers
@@ -16,7 +16,7 @@ import asyncio
 print("Бот запущен!")
 print("DostAlkoСourier бот")
 
-bot = Bot(token=TOKEN)
+bot = Bot(token=TOKENC)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
 @dp.message_handler(commands=["start", "update"])

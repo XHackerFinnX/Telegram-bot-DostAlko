@@ -4,12 +4,12 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from keybord_markup.keybord import remove_keyboard, rf_or_zagran, check_yes_and_no, gender_m_g
 from data.data_users import sql_users_add
 from data.data_courier import sql_courier_add
-from config.config import TOKEN, id_data_courier
+from config.config import TOKENC, id_data_courier
 from config.week import day_week
 import time
 import datetime
 
-bot = Bot(token=TOKEN)
+bot = Bot(token=TOKENC)
 
 class RegistrationCourier(StatesGroup):
     

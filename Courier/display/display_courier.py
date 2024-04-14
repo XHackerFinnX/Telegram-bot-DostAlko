@@ -1,8 +1,8 @@
 from aiogram import Bot
-from config.config import TOKEN
+from config.config import TOKENC
 from keybord_markup.keybord import info_courier, change_open, change_close
 
-bot = Bot(token=TOKEN)
+bot = Bot(token=TOKENC)
 
 
 async def work_courier_info(id_users):
