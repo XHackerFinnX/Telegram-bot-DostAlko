@@ -1,3 +1,8 @@
 venv
 .env
 __pycache__
+
+courier.db
+courier_change.db
+storage_couriers.db
+users.db
